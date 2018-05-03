@@ -1,0 +1,101 @@
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: url(img/background.gif) no-repeat 50% 50%;
+	background-size: cover;
+	height: 100vh;
+	display: table;
+}
+.wrapper {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30%;
+	transition: .5s;
+}
+.wrapper:hover {
+	color:808080;
+}
+path {
+	stroke: #fff;
+	fill: #fff;
+	stroke-dasharray: 1300;
+	opacity: 10;
+	animation: animate 5s cubic-bezier(.11,.57,.99,.66);
+}
+@keyframes animate {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: 1450;
+	}
+
+	30% {
+		opacity: 10;
+		fill: none;
+		stroke-dashoffset: 455;
+	}
+
+	90% {
+		fill: rgba(255,255,255,0);
+	}
+
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+		stroke-dashoffset: 0;
+	}
+}
+.media {
+	position: absolute;
+	top: 85%;
+	left: 51%;
+	transform: translate(-53%, -50%);
+}
+li {
+	list-style: none;
+	margin: 10px 30px;
+	display: inline-block;
+	font-size: 35px;
+	padding: 20px 20px;
+	color: #fff;
+}
+.invite {
+	color: #00FF00;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+}
+a {
+	display: inline-block;
+	font-size: 45px;
+	font-family: Lucida Sans Unicode; 
+	color: #fff;
+	transition: .5s;
+}
+a:hover {
+	color: #808080;
+}
+.music {
+    font-family: Lucida Sans Unicode;
+    font-size: 10px;
+	color: #fff;
+	position: absolute;
+	top: 93%;
+	left: 1%;
+}
+.watermark {
+    font-family: Lucida Sans Unicode;
+    font-size: 10px;
+	color: #fff;
+	position: absolute;
+	top: 95%;
+	left: 1%;
+}
